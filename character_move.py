@@ -44,11 +44,20 @@ def move_rectangle():
 
 
 def move_circle():
-    pass
+    r = 220
+    for deg in range(360, 0, -1):
+        x = r * math.cos(math.radians(deg)) + 400
+        y = r * math.sin(math.radians(deg)) + 330
+        clear_canvas()
+        grass.draw(400, 30)
+        character.draw(x, y)
+        update_canvas()
+        delay(0.01)
 
 
-while True:
-    move_rectangle()
-    move_circle()
+#while True:
+    #move_rectangle()
+
+move_circle()
 
 close_canvas()
