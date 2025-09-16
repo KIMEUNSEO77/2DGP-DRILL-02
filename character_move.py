@@ -55,9 +55,10 @@ def move_circle():
         delay(0.01)
 
 
-#while True:
-    #move_rectangle()
+while True:
+    move_rectangle()
+    move_circle()
 
-move_circle()
+
 
 close_canvas()
